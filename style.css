@@ -1,4 +1,4 @@
-body
+body, html
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
@@ -12,19 +12,22 @@ header{
     background-color: #333;
     padding: 10px;
     color: azure;
-    
 }
+
 h1{
     text-align: center;
+}
+
+h1:hover
+{
+    text-decoration: underline;
+    color: black;
 }
 nav
 {
     background-color: #444;
     padding: 1px;
     height: 8%;
-    
-    
-    
 }
 
 nav ul
@@ -50,52 +53,85 @@ nav ul li a
 
 nav ul li a:hover
 {
-    background-color: #999;
+    background-color: rgba(54, 28, 89, 0.605);
     border-radius: 10px;
+    color: white;
 }
 
-.Contacto1
+.Servicios1
 {
-    background-image: url(https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg);
-    background-size: cover;
+    width: 100%;
+    background-color: white;
     height: 100vh;
-    background-position: center;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
-.section
+
+.serv
 {
-    width: 50%;
-    font-weight: bolder;
-    font-size: 40px;
-    padding: 25px;
-    color: azure;
-    text-align: center;
-    display: inline-block;
+border-radius: 15%;
+
 }
+
+.serv:hover
+{
+    
+    background-color: rgba(54, 28, 89, 0.605);
+    transform: scale(1.1);
+    margin: 6% 0;
+
+}
+
+
+.parserv
+{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    padding: 10%;
+}
+.imgserv
+{
+width: 100px;
+height: 100px;
+padding-left: 40%;
+margin-top: 15%;
+}
+
 
 h2
 {
-    text-align: center;
-    color: whitesmoke;
-    text-transform: uppercase;
-    font-size: 60px;
-    font-weight: bold;
-    
+    font-size: 30px;
+    padding-left: 15%;
+}
+.grid-container
+{
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    display: grid;
+    background-size: cover;
+    background-position: center;
 }
 
-form
+.caja1
 {
-    margin-top: 25vh;
-    display: inline-block;
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.567);
-    padding: 20px 0;
-    max-width: 500px;
-    color: azure;
-    font-size: 35px;
-    border: none;
-    border-radius: 15px;
-    padding: 0;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    margin-top: 10%;
+    padding-left: 10px;
+}
+
+.caja2
+{
+    margin-top: 15%;
+    background-color: #222;
+    border-radius: 20px;
+    margin-bottom: 20%;
     
 }
 
@@ -120,27 +156,64 @@ textarea
 
     min-width: 100%;
     resize: none;
-    min-height: 100px;
+    min-height: 150px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 
-.Servicios1
+.dw1
 {
-    width: 100%;
-    background-color: aqua;
-    height: 100vh;
+    text-align: center;
+    font-size: 60px;
+    padding-left: 10%;
+    color: #222;
 }
+
+.dw1:hover
+{
+    color: black;
+    text-decoration: underline;
+}
+
 
 .Nosotros1
 {
     width: 100%;
-    background-color: rebeccapurple;
+    background-color: whitesmoke;
     height: 100vh;
 }
 
-footer
+
+.footer
 {
     width: 100%;
-    background-color: #444;
-    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.033);
+    height: 15vh;
+    border-top: 1px solid black;
+    
+}
+
+.cajafo
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    
+
+    color: black;
+    font-size: ;
+}
+
+.imgfo
+{
+    width: 50px;
+    height: 50px;
+    padding-left: 3%;
+    margin-top: 1%;
+}
+
+.imgfo:hover
+{
+    transform: scale(1.5);
 }
