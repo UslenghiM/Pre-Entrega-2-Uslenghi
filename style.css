@@ -14,6 +14,13 @@ header{
     color: azure;
 }
 
+.headimg
+{
+    width: 50px;
+    height: 50px;
+    padding-left: 25px;
+}
+
 h1{
     text-align: center;
 }
@@ -23,6 +30,8 @@ h1:hover
     text-decoration: underline;
     color: black;
 }
+
+/*  COMIENZO NAV */
 nav
 {
     background-color: #444;
@@ -39,8 +48,11 @@ nav ul
     gap: 30px;
     text-transform: uppercase;
     padding-top: 5px;
-    
+}
 
+nav ul li:hover
+{
+    transform: scale(1.3);
 }
 
 nav ul li a
@@ -58,6 +70,10 @@ nav ul li a:hover
     color: white;
 }
 
+/*  FIN NAV */
+
+/* INICIO SERVICIOS */
+
 .Servicios1
 {
     width: 100%;
@@ -67,7 +83,11 @@ nav ul li a:hover
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
-
+.h2serv
+{
+    text-align: center;
+    padding-left: 40px;
+}
 .serv
 {
 border-radius: 15%;
@@ -78,15 +98,13 @@ border-radius: 15%;
 {
     
     background-color: rgba(54, 28, 89, 0.605);
-    transform: scale(1.1);
-    margin: 6% 0;
 
 }
 
 
 .parserv
 {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     font-weight: 400;
     padding: 10%;
@@ -99,17 +117,97 @@ padding-left: 40%;
 margin-top: 15%;
 }
 
+/* FIN SERVICIOS */
 
-h2
+/*  INICIO NOSOTROS */
+
+.sobrenos
+{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+
+
+
+.h2nos
+{
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.h2nos:hover
+{
+    text-decoration: underline black;
+    
+}
+
+.Nosotros1
+{
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.imgnos
+{
+    width: 70px;
+    height: 70px;
+    margin-top: 10%;
+}
+
+
+.cajanos1
 {
     font-size: 30px;
-    padding-left: 15%;
+    padding-left: 10px;
+    margin-top: 5%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 20px;
 }
+
+.cajanos1:hover
+{
+    color: white;
+    background-color: black;
+}
+.cajanos2
+{
+    background-color: white;
+    font-size: 30px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding-left: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.cajanos2:hover
+{
+    color: white;
+    background-color: black;
+}
+
+/* FIN NOSOTROS */
+
+/* INICIO CONTACTO */
 .grid-container
 {
     width: 100%;
     height: 100%;
-    background-color: azure;
+    background-color: white;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr ;
     display: grid;
@@ -129,10 +227,9 @@ h2
 .caja2
 {
     margin-top: 15%;
-    background-color: #222;
+    background-color: black;
     border-radius: 20px;
     margin-bottom: 20%;
-    
 }
 
 .form_input
@@ -174,15 +271,9 @@ textarea
     text-decoration: underline;
 }
 
+/*  FIN CONTACTO */
 
-.Nosotros1
-{
-    width: 100%;
-    background-color: whitesmoke;
-    height: 100vh;
-}
-
-
+/* INICIO FOOTER */
 .footer
 {
     width: 100%;
@@ -197,10 +288,8 @@ textarea
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
-    
-
     color: black;
     font-size: ;
 }
@@ -217,3 +306,5 @@ textarea
 {
     transform: scale(1.5);
 }
+
+/* FIN FOOTER */
