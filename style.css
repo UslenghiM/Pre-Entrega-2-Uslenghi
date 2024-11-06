@@ -348,6 +348,10 @@ footer
     
 }
 
+.afo{
+    padding: 0px 0px 10px 20px
+}
+
 .imgfo:hover
 {
     transform: scale(1.5);
@@ -414,3 +418,5 @@ footer
         width: 15px;
         height: 15px;
     }
+
+}
