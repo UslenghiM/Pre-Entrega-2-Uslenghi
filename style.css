@@ -278,7 +278,7 @@ input,textarea
     box-sizing: border-box;
     border: 3px solid black;
     border-radius: 15px;
-    background-color: rgba(54, 28, 89, 0.605);
+    background-color: rgba(54, 28, 89, 0.242);
     font-size: 30px;
     color: black;
 }
@@ -354,3 +354,63 @@ footer
 }
 
 /* FIN FOOTER */
+
+
+/* media queries */
+
+@media only screen and (max-width: 480px)
+{
+
+    .container
+    {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr 1fr 0.2 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        grid-template-areas: 'h1'
+                                'nav'
+                                'serv1'
+                                'serv2'
+                                'serv3'
+                                'serv4'
+                                'nostit'
+                                'nos1'
+                                'nos2'
+                                'nos3'
+                                'nos4'
+                                'contacto1'
+                                'footer';
+    }
+    h1{
+        font-size: 18px;
+    }
+    nav{
+        font-size: 15px;
+    }
+    .parserv, .h2serv
+    {
+        font-size: 20px;
+    }
+
+    .nostit{
+        font-size: 30px;
+    }
+    .nos1, .nos2, .nos3, .nos4
+    {
+        font-size: 20px;
+        height:
+    }
+    .dw1{
+        font-size: 30px;
+        }
+    input{
+        font-size: 15px
+    }
+    .footh2{
+        font-size: 15px;
+    
+    }
+    .imgfo{
+        width: 15px;
+        height: 15px;
+    }
